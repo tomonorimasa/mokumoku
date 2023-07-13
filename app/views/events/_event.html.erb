@@ -18,7 +18,7 @@
           <i class="bi bi-calendar"></i>
           <%= l event.held_at, format: :short %>
         </div>
-        <% if event&.only_woman? %>
+        <% if event.only_woman? %>
           <span class="badge bg-secondary">女性限定</span>
         <% end %>
       </div>

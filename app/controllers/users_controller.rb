@@ -3,7 +3,6 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
-    @gender_options = User.genders_i18n
   end
 
   def create
@@ -21,7 +20,4 @@ class UsersController < ApplicationController
     params.require(:user).permit(:email, :name, :gender, :password, :password_confirmation)
   end
 
-  def self.genders_i18n
-    genders.keys.map { |key| [I18n.t("activerecord.attributes.user.genders.#{key}"), key] }
-  end
 end
