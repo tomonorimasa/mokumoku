@@ -1,4 +1,11 @@
 ja:
+  activerecord:
+    attributes:
+      user:
+        genders:
+          other: その他
+          man: 男性
+          woman: 女性
   enums:
     notification_timing:
       timing:
@@ -6,3 +13,8 @@ ja:
         commented_to_event: あなたのイベントにコメントがあった時
         attended_to_event: あなたのイベントに参加申し込みがあった時
         liked_event: あなたのイベントにいいねがついた時
+    user:
+      gender:
+        other: その他
+        man: 男性
+        woman: 女性
