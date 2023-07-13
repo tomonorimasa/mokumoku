@@ -79,7 +79,7 @@ class User < ApplicationRecord
     notification_timings.liked_event.present?
   end
 
-  def female?
+  def woman?
     gender == 'woman'
   end
 

@@ -21,7 +21,7 @@
     <%= f.file_field :thumbnail, class: 'form-control js-file-select-preview mb-3', accept: 'image/*', data: { target: '#preview-target' } %>
     <%= image_tag f.object.decorate.thumbnail, id: 'preview-target', class: 'w-100 border' %>
   </div>
-  <% if current_user&.female? %>
+  <% if current_user&.woman? %>
     <div class="mb-3">
       <%= f.check_box :only_woman, { value: "true"}, class: 'form-check-label', for:'flexCheckDefault' %>
       <%= f.label :only_woman %>
